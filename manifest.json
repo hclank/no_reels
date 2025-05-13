@@ -6,5 +6,13 @@
   "action": {
     "default_popup": "index.html",
     "default_icon": "logo.png"
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com", "https://www.instagram.com/reels"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": "activeTab"
 }
