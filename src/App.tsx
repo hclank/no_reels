@@ -1,11 +1,11 @@
 function App() {
   return (
-    <div className="w-[120vh] flex flex-col items-center justify-center h-screen">
-      <div className="p-16 flex justify-center items-center flex-col">
-        <img className="w-22 h-22" src="/logo.png" alt="logo" />
-        <h3 className="text-md m-2 font-bold">No Reels</h3>
+    <div className="app">
+      <div className="header">
+        <img className="logo" src="/logo.png" alt="logo" />
+        <h3 className="title">No Reels</h3>
       </div>
-      <div className="footer p-4">
+      <div className="footer">
         made by{" "}
         <a href="https://github.com/hclank" target="_blank">
           @hclank
