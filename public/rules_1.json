@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "url": "./internal.html"
+      }
+    },
+    "condition": {
+      "urlFilter": "||www.example.com/",
+      "resourceTypes": ["main_frame"]
+    }
+  }
+]

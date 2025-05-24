@@ -6,13 +6,32 @@
     "default_popup": "index.html",
     "default_icon": "logo.png"
   },
-  "permissions": ["scripting"],
-  "host_permissions": ["https://www.instagram.com/*"],
-  "content_scripts": [
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": [
+    "https://instagram.com/reels/",
+    "https://instagram.com/reels/*",
+    "https://instagram.com/explore"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules_1.json"
+      }
+    ]
+  },
+  "web_accessible_resources": [
     {
-      "matches": ["https://www.instagram.com/*"],
-      "js": ["contentScript.js"],
-      "run_at": "document_idle"
+      "resources": ["./internal.html"],
+      "matches": [
+        "https://instagram.com/reels/",
+        "https://instagram.com/reels/*",
+        "https://instagram.com/explore"
+      ]
     }
   ]
 }

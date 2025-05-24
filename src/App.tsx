@@ -7,7 +7,7 @@ function App() {
       </div>
       <div className="footer">
         made by{" "}
-        <a href="https://github.com/hclank" target="_blank">
+        <a href="https://github.com/hclank" target="_blank" className="link">
           @hclank
         </a>
       </div>
