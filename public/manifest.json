@@ -1,9 +1,0 @@
-{
-  "manifest_version": 3,
-  "version": "1.0.0",
-  "name": "noreels",
-  "action": {
-    "default_popup": "index.html",
-    "default_icon": "logo.png"
-  }
-}
