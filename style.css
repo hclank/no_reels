@@ -1,0 +1,4 @@
+/* Targeting the Reels link via its attribute */
+a[href="/reels/"] {
+  display: none !important;
+}

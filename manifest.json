@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Instagram Reels Remover",
+  "version": "1.0",
+  "description": "Removes the Reels tab from the Instagram sidebar.",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
