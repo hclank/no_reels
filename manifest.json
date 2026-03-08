@@ -4,6 +4,20 @@
   "version": "1.2",
   "description": "Removes the Reels tab from the Instagram sidebar.",
   "permissions": ["tabs"],
+  "icons": {
+    "16": "assets/logo.png",
+    "48": "assets/logo.png",
+    "128": "assets/logo.png"
+  },
+
+  "action": {
+    "default_icon": {
+      "16": "assets/logo.png",
+      "48": "assets/logo.png",
+      "128": "assets/logo.png"
+    },
+    "default_title": "IG Reels Blocker"
+  },
   "host_permissions": ["*://*.instagram.com/*"],
   "web_accessible_resources": [
     {
