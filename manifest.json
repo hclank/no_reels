@@ -5,6 +5,12 @@
   "description": "Removes the Reels tab from the Instagram sidebar.",
   "permissions": ["tabs"],
   "host_permissions": ["*://*.instagram.com/*"],
+  "web_accessible_resources": [
+    {
+      "resources": ["blocked.html"],
+      "matches": ["https://www.instagram.com/*"]
+    }
+  ],
   "content_scripts": [
     {
       "matches": ["https://www.instagram.com/*"],
